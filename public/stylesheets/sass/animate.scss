@@ -1,0 +1,17 @@
+.span-circle{
+    animation-name: spanC;
+    animation-duration: 1s;
+}
+@keyframes spanC{
+    0%   {width: 0px; height:0px;}
+    100% {width: 400px; height:400px;}
+}
+
+.span-circle2{
+    animation-name: spanC2;
+    animation-duration: 1s;
+}
+@keyframes spanC2{
+    0%   {width: 0px; height:0px;}
+    100% {width: 220px; height:220px;}
+}

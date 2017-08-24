@@ -1,0 +1,173 @@
+@import '../../../node_modules/bulma/bulma.sass';
+@import url(../../fonts/thsarabunnew.css);
+@import 'color.scss';
+@import 'animate.scss';
+$size: 25px;
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color:$white-txt-color; }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/*bus icon*/
+.material-icons.md-gray{ color:$icon-bus-color; }
+//Custom columns//
+.columns{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.columns:not(:last-child) {
+    margin-bottom: -25px;
+}
+
+
+
+
+html{
+    background-color:$base;
+}
+.navbar{
+    background-color:$base;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 22px;
+    color:$white-txt-color;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    z-index: -1000;
+}
+.logo{
+    z-index: 100000;
+}
+.header-txt{
+    font-family: 'THSarabunNew', sans-serif;
+    font-size: 19px;
+    color: $white-txt-color;
+    font-weight: bold;
+    font-style: normal;
+}
+.icon-header-txt{
+    padding-bottom: 0px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top:5px; 
+}
+
+///Card view///
+.columns-card{
+    padding-top: 30px;
+}
+.column-card{
+    padding: 20px;
+    padding-bottom: 1px;
+    margin-top: -30px;
+}
+.card-bus{
+    background-color: $card-line-color;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);;
+    border-radius: 8px;
+    height: 70px;
+    z-index: 1000px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.card-bus:hover{
+    background-color: $card-hover-color;
+}
+
+
+// Circle Background //
+.bg-circle{
+    border-radius: 50%;
+	width: 400px;
+    height: 400px; 
+    background-color: $bg-circle;
+    z-index: -1;
+    position: fixed;
+    bottom: -150px;
+    left: -150px;
+}
+.bg-circle-top{
+    border-radius: 50%;
+	width: 220px;
+    height: 220px; 
+    background-color: $bg-circle;
+    z-index: -10000;
+    position: fixed;
+    top: 65px;
+    right: -110px;
+    opacity: 0.8;
+}
+
+
+
+
+.left-circle {
+    border-bottom-left-radius: $size* 2;
+    border-top-left-radius: $size * 2;
+    height: $size * 2;
+    width: $size;
+    background-color: $bg-circle;
+
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+
+        padding-top:6px;
+        padding-right: 30px;
+       
+  }
+
+//txt//
+.line-detail{
+    font-family: 'THSarabunNew', sans-serif;
+    font-size: 16px;
+    color:$line-detail-color;
+    font-weight: bold;
+    font-style: normal;
+}
+.txt-distance{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight:500;
+}
+.txt-distance-km{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight:500;
+}
+.txt-distance-position{
+    padding-top:0px; padding-bottom:0px; padding-left:5px;
+}
+.txt-distance-km-position{
+    margin-top:15px; padding-left:5px;
+}
+
+  @media only screen and (max-width:375px){
+    .left-circle {
+        padding-right: 40px;
+    }
+  }
+
+  @media only screen and (max-width:320px){
+    .txt-distance-position,.txt-distance-km-position{
+        padding-left:0px;
+    }
+    .left-circle {
+        padding-right: 55px;
+    }
+    .txt-distance{
+        font-size: 18px;
+    }
+    .txt-distance-km{
+        font-size: 16px;
+    }
+  }
