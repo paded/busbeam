@@ -5,7 +5,7 @@ var browserSync = require('browser-sync');
 
 
 gulp.task('sass', () =>
-	sass('public/stylesheets/sass/busdetail.scss')
+	sass('public/stylesheets/sass/index.scss')
 		.on('error', sass.logError)
 		.pipe(gulp.dest('public/stylesheets/css'))
 );

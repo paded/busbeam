@@ -5672,8 +5672,11 @@ html {
   color: #F5F5F5;
   text-align: center;
   padding: 10px;
+  width: 100%;
   margin-bottom: 12px;
-  z-index: -1000; }
+  z-index: 1000;
+  position: fixed;
+  margin-top: 10px; }
 
 .logo {
   z-index: 100000; }
@@ -5690,6 +5693,10 @@ html {
   text-align: right;
   padding-right: 10px;
   padding-top: 5px; }
+
+.shadow {
+  transition: 0.1s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); }
 
 .columns-card {
   padding-top: 30px; }
