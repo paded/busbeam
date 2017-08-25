@@ -5670,7 +5670,8 @@ html {
   z-index: 1000;
   position: fixed;
   margin-top: 10px;
-  width: 100%; }
+  width: 100%;
+  padding-top: 20px; }
 
 .logo {
   z-index: 100000; }
@@ -5692,13 +5693,19 @@ html {
   transition: 0.1s;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); }
 
+#logo {
+  width: 120px;
+  height: 20px; }
+
 .columns-card {
   padding-top: 30px; }
 
 .column-card {
   padding: 20px;
   padding-bottom: 1px;
-  margin-top: -35px; }
+  margin-top: -38px;
+  padding-left: 8px;
+  padding-right: 8px; }
 
 .card-bus {
   background-color: #F5F5F5;
@@ -5771,15 +5778,35 @@ html {
   margin-top: 15px;
   padding-left: 5px; }
 
+@media only screen and (min-width: 662px) {
+  .wrap-content {
+    padding-left: 20%;
+    padding-right: 20%; } }
+@media only screen and (min-width: 1024px) {
+  .wrap-content {
+    padding-left: 28%;
+    padding-right: 28%; } }
 @media only screen and (max-width: 375px) {
   .left-circle {
-    padding-right: 40px; } }
+    padding-right: 30px; } }
+@media only screen and (max-width: 360px) {
+  .txt-distance-position, .txt-distance-km-position {
+    padding-left: 0px; }
+
+  .left-circle {
+    padding-right: 30px; }
+
+  .txt-distance {
+    font-size: 18px; }
+
+  .txt-distance-km {
+    font-size: 16px; } }
 @media only screen and (max-width: 320px) {
   .txt-distance-position, .txt-distance-km-position {
     padding-left: 0px; }
 
   .left-circle {
-    padding-right: 55px; }
+    padding-right: 45px; }
 
   .txt-distance {
     font-size: 18px; }

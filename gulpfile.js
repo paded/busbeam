@@ -9,11 +9,11 @@ gulp.task('sass', () =>
 		.on('error', sass.logError)
 		.pipe(gulp.dest('public/stylesheets/css'))
 );
-// gulp.task('busdetail', () =>
-// sass('public/stylesheets/sass/busdetail.scss')
-//     .on('error', sass.logError)
-//     .pipe(gulp.dest('public/stylesheets/css'))
-// );
+gulp.task('bd', () =>
+sass('public/stylesheets/sass/busdetail.scss')
+    .on('error', sass.logError)
+    .pipe(gulp.dest('public/stylesheets/css'))
+);
     
 gulp.task('browser-sync', function() {
     browserSync({

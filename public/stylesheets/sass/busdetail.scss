@@ -44,6 +44,7 @@ html{
     z-index: 1000;
     position: fixed;
     margin-top: 10px;
+    padding-top: 20px;
 }
 .logo{
     z-index: 100000;
@@ -60,6 +61,7 @@ html{
     text-align: right;
     padding-right: 10px;
     padding-top:5px; 
+    padding-left: 20px;
 }
 .shadow{
     transition: 0.1s;
@@ -73,11 +75,13 @@ html{
 .column-card{
     padding: 20px;
     padding-bottom: 1px;
-    margin-top: -50px;
+    margin-top: -55px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .card-bus{
     background-color: $card-line-color;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     height: auto;
     padding-bottom: 15px;
@@ -179,7 +183,7 @@ html{
 }
 .position-mobile-distance{
     
-    }
+}
 //Button//
 .call-btn{
     background-color: $yellow-base;
@@ -197,7 +201,47 @@ html{
     color:$base;
     padding-left: 0;
 }
+#logo{
+    width:120px; 
+    height:20px;
+}
 
+@media only screen and (min-width:376px){
+    .wrap-content {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+@media only screen and (min-width:470px){
+    .wrap-content {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+@media only screen and (min-width:600px){
+    .wrap-content {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+@media only screen and (min-width:768px){
+    .wrap-content {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .wrap-content{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+@media only screen and (min-width:1440px){
+    .wrap-content{
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
 
 @media only screen and (max-width:375px){
     .position-mobile-time{
@@ -242,4 +286,5 @@ html{
     .position-mobile-distance{
         margin-left:-15px;
     }
+    
 }
